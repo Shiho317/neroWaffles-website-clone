@@ -57,17 +57,17 @@ const aboutY = aboutId.getBoundingClientRect().top;
 const contactY = contactId.getBoundingClientRect().top;
 
 window.addEventListener('scroll', () => {
-  const scrollTopDistance = window.scrollY;
+  const windowTopDistance = window.pageYOffset;
 
-    if (scrollTopDistance > menuY && aboutY > scrollTopDistance){
+    if (windowTopDistance > menuY && aboutY > windowTopDistance){
       menuLink.classList.add('turn-black');
       aboutLink.classList.remove('turn-black');
       contactLink.classList.remove('turn-black');
-    }else if(scrollTopDistance > aboutY && contactY > scrollTopDistance){
+    }else if(windowTopDistance > aboutY && contactY > windowTopDistance){
       aboutLink.classList.add('turn-black');
       menuLink.classList.remove('turn-black');
       contactLink.classList.remove('turn-black');
-    }else if(scrollTopDistance > contactY){
+    }else if(windowTopDistance > contactY){
       contactLink.classList.add('turn-black');
       aboutLink.classList.remove('turn-black');
       menuLink.classList.remove('turn-black')
