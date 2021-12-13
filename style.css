@@ -123,6 +123,10 @@
     text-decoration: none;
   }
 
+  .menu-btn a:hover{
+    color: var(--black-color);
+  }
+
   .turn-black{
     color: var(--black-color);
   }
@@ -148,6 +152,10 @@
     border: 1px solid var(--brown-color);
     padding: 6px;
     font-size: 12px;
+  }
+
+  .mini-waffle-preorders button:hover{
+    color: var(--black-color);
   }
 
   .border-brown{
@@ -243,6 +251,11 @@
     cursor: pointer;
   }
 
+  .btn-left:hover{
+    border-bottom: 1px solid var(--black-color);
+    border-left: 1px solid var(--black-color);
+  }
+
   .btn-right{
     position: absolute;
     right: 15px;
@@ -257,9 +270,18 @@
     cursor: pointer;
   }
 
+  .btn-right:hover{
+    border-bottom: 1px solid var(--black-color);
+    border-right: 1px solid var(--black-color);
+  }
+
   .news a{
     color: var(--brown-color);
     text-decoration: none;
+  }
+
+  .news a:hover{
+    color: var(--black-color);
   }
 
   .news h1{
@@ -300,6 +322,10 @@
     text-decoration: none;
   }
 
+  .details a:hover{
+    color: var(--black-color);
+  }
+
 .border{
   border: none;
   height: 1px;
@@ -321,6 +347,10 @@
   font-size: 10px;
   text-decoration: none;
   color: var(--brown-color);
+}
+
+.socialmedia a:hover{
+  color: var(--black-color);
 }
 
 footer{
