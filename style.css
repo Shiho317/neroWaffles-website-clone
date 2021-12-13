@@ -1,0 +1,546 @@
+:root{
+  --brown-color: #a67c52;
+  --black-color: #49382b;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--brown-color);
+}
+
+/*=====================================mobile=============================================*/
+
+  #body-container{
+    display: block;
+    text-align: center;
+  }
+
+  .logo-container{
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 50vh;
+    background: url('./images/nero-bg.png') repeat;
+    background-size: 62px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    overflow: hidden;
+    z-index: 99;
+  }
+
+  .isShrink{
+    width: 100px;
+  }
+
+  .isNormal{
+    width: 200px;
+  }
+
+  .isScroll{
+    height: 10vh;
+  }
+
+  .hidden{
+    opacity: 0;
+  }
+
+  .sub-name{
+    text-align: center;
+    color: var(--brown-color);
+    font-size: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .logo-wrap{
+    place-items: center;
+  }
+
+  .logo{
+    width: 200px;
+    mix-blend-mode: multiply;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .syrup-bg{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 100%;
+    height: 750vh;
+    background: url('/images/gold-bg.jpeg');
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-mask-image: url('/images/syrup.svg');
+    mask-image: url('/images/syrup.svg');
+    mask-size: 200%;
+    -webkit-mask-size: 200%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: none;
+    -webkit-mask-position-x: left;
+    -webkit-mask-position-y: 0px;
+    z-index: -99;
+  }
+
+  .vancouver{
+    text-align: center;
+    color: var(--brown-color);
+    font-size: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header{
+    position: sticky;
+    top: 10vh;
+    z-index: 99;
+  }
+
+  .menu-btn{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+  }
+
+  .menu-btn ul{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu-btn li{
+    list-style: none;
+  }
+
+  .menu-btn a{
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .turn-black{
+    color: var(--black-color);
+  }
+
+  main{
+    padding: 0 30px;
+  }
+
+  .waffle-maker-img{
+    margin-top: 20px;
+  }
+
+  .waffle-maker{
+    width: 160px;
+  }
+
+  .mini-waffle-preorders{
+    margin: 8px;
+  }
+
+  .mini-waffle-preorders button{
+    background-color: transparent;
+    border: 1px solid var(--brown-color);
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .border-brown{
+    border-top: 1px solid var(--brown-color);
+    border-bottom: 1px solid var(--brown-color);
+    padding: 20px;
+  }
+
+  .border-brown h1{
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  .category{
+    text-align: start;
+  }
+
+  .category h1{
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--black-color);
+  }
+
+  .menu-item{
+    margin: 5px 0;
+  }
+
+  .menu-item h6{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--black-color);
+  }
+
+  .menu-item p{
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--brown-color);
+  }
+
+  .price{
+    color: var(--black-color);
+  }
+
+  .black{
+    color: var(--black-color);
+  }
+
+  #about{
+    text-align: center;
+  }
+
+  .slider{
+    position: relative;
+    margin: 40px 0;
+    height: 130px;
+    overflow: hidden;
+    
+  }
+
+  .slide{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+  }
+
+  .slide img{
+    height: 130px;
+  }
+
+  .slider-btn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-left{
+    position: absolute;
+    left: 15px;
+    top: 55px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-bottom: 1px solid var(--brown-color);
+    border-left: 1px solid var(--brown-color);
+    transform: rotate(45deg);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn-right{
+    position: absolute;
+    right: 15px;
+    top: 55px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-bottom: 1px solid var(--brown-color);
+    border-right: 1px solid var(--brown-color);
+    transform: rotate(-45deg);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .news a{
+    color: var(--brown-color);
+    text-decoration: none;
+  }
+
+  .news h1{
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--black-color);
+  }
+
+  .news h6{
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .news p {
+    font-size: 18px;
+    color: var(--black-color);
+  }
+
+  .branch{
+    text-align: start;
+  }
+
+  .branch h1{
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--black-color);
+  }
+
+  .details p{
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .details a{
+    color: var(--brown-color);
+    text-decoration: none;
+  }
+
+.border{
+  border: none;
+  height: 1px;
+  background-color: var(--brown-color);
+}
+
+.socialmedia{
+  width: 100%;
+  height: 40vh;
+  padding: 15vh 10vh;
+}
+
+.socialmedia p{
+  font-size: 10px;
+  margin: 5px;
+}
+
+.socialmedia a{
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--brown-color);
+}
+
+footer{
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p{
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--brown-color);
+}
+
+/*=======================================Desktop===========================================*/
+
+@media screen and (min-width: 1024px){
+
+  #body-container{
+  display: flex;
+}
+
+.logo-container{
+  width: 40%;
+  background-image: url('./images/nero-bg.png') repeat;
+  background-size: 95px;
+  height: 100vh;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.isShrink{
+  width: 330px;
+}
+
+.isNormal{
+  width: 330px;
+}
+
+.isScroll{
+  height: 100vh;
+}
+
+.hidden{
+  opacity: 1;
+}
+
+.sub-name{
+  font-size: 17px;
+}
+
+.logo{
+  width: 330px;
+}
+
+.syrup-bg{
+  top: 100vh;
+  height: 1000vh;
+  background-position: 10%;
+  mask-size: 300%;
+  -webkit-mask-size: 300% auto;
+}
+
+.vancouver{
+  font-size: 17px;
+}
+
+.contents{
+  flex: 2;
+}
+
+header{
+  top: 0;
+  align-items: center;
+}
+
+.menu-btn{
+  background-color: white;
+  height: 75px;
+}
+
+.menu-btn a{
+  font-size: 17px;
+}
+
+main{
+  padding: 0 60px;
+}
+
+.waffle-maker-img{
+  margin-top: 60px;
+}
+
+.waffle-maker{
+  width: 320px;
+}
+
+.mini-waffle-preorders{
+  margin: 15px;
+}
+
+.mini-waffle-preorders button{
+  padding: 6px 8px;
+  font-size: 17px;
+}
+
+.border-brown h1{
+  font-size: 32px;
+  line-height: 76px;
+}
+
+.category h1{
+  font-size: 32px;
+}
+
+.menu-item{
+  margin: 10px 0;
+}
+
+.menu-item h6{
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.menu-item p{
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.slider{
+  margin: 100px 0;
+  height: 400px;
+}
+
+.slide img{
+  height: 400px;
+}
+
+.btn-left{
+  left: 30px;
+  top: 180px;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-right{
+  right: 30px;
+  top: 180px;
+  width: 25px;
+  height: 25px;
+}
+
+.news{
+  padding: 0 70px;
+  margin-bottom: 100px;
+}
+
+
+.news h1{
+  font-size: 32px;
+}
+
+.news h6{
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.news p {
+  font-size: 20px;
+}
+
+.branch{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.branch h1{
+  font-size: 32px;
+  margin: 0;
+}
+
+.details{
+  margin-top: 30px;
+}
+
+.details p{
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.socialmedia{
+height: 60vh;
+padding: 25vh 10vh;
+}
+
+.socialmedia p{
+font-size: 17px;
+}
+
+.socialmedia a{
+font-size: 17px;
+}
+
+footer{
+position: sticky;
+bottom: 0;
+justify-content: space-around;
+background-color: white;
+height: 74px;
+margin: 0;
+align-items: center;
+}
+
+footer p{
+font-size: 17px;
+line-height: 14px;
+color: var(--brown-color);
+}
+
+
+
+}
+
