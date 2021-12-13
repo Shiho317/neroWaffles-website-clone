@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
       const targetId = section.hash;
       const targetElement = document.querySelector(targetId);
-      const targetOffsetTop = window.pageYOffset = targetElement.getBoundingClientRect().top;
+      const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
 
       window.scrollTo({
         top: targetOffsetTop,
