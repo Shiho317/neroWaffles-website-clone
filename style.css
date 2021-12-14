@@ -320,6 +320,7 @@
   .details a{
     color: var(--brown-color);
     text-decoration: none;
+    font-size: 10px;
   }
 
   .details a:hover{
@@ -364,6 +365,16 @@ footer p{
   line-height: 14px;
   color: var(--brown-color);
 }
+
+/*=======================================Tablet===========================================*/
+
+@media screen and (min-width: 768px){
+
+  .details a{
+    font-size: 10px;
+  }
+}
+
 
 /*=======================================Desktop===========================================*/
 
