@@ -52,13 +52,16 @@ window.addEventListener('scroll', () => {
 const menuId = document.querySelector('#menu');
 const aboutId = document.querySelector('#about');
 const contactId = document.querySelector('#contact');
+const menuBtn = document.querySelector('.menu-btn');
 const menuY = menuId.getBoundingClientRect().top;
 const aboutY = aboutId.getBoundingClientRect().top;
 const contactY = contactId.getBoundingClientRect().top;
 
-window.addEventListener('scroll', () => {
-  const windowTopDistance = window.pageYOffset;
 
+window.addEventListener('scroll', () => {
+  const menuBtnHeight = menuBtn.getBoundingClientRect().top + menuBtn.clientHeight;
+  const windowTopDistance = window.pageYOffset + menuBtnHeight;
+  
     if (windowTopDistance >= menuY && aboutY > windowTopDistance){
       menuLink.classList.add('turn-black');
       aboutLink.classList.remove('turn-black');
