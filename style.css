@@ -1,7 +1,3 @@
-:root{
-  --brown-color: #a67c52;
-  --black-color: #49382b;
-}
 
 *{
   box-sizing: border-box;
@@ -10,6 +6,8 @@
   font-family: 'Hind Madurai', sans-serif;
   font-family: 'Montserrat', sans-serif;
   color: var(--brown-color);
+  --brown-color: #a67c52;
+  --black-color: #49382b;
 }
 
 /*=====================================mobile=============================================*/
